@@ -1,0 +1,254 @@
+body{
+    font-family: Arial, sans-serif;
+    background-image: url('Background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f2f2f2;
+  
+    }
+    
+
+  
+  
+  header {
+    background-color: #6d6565;
+    color: rgb(255, 255, 255);
+    
+  }
+  
+  header h1 {
+    margin: 6px;
+    
+  }
+ 
+  
+  header nav ul li a:hover {
+    color: #0512c2;
+    background-color: white;
+
+    transform: scale(1.1);
+    transition: ease-out;
+  }
+  
+  main {
+    margin: 2em;
+  }
+  
+  section {
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  section table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+   th {
+    
+    padding: 0.5em;
+    text-align: left;
+    background-color: #333;
+    color: white;
+  }
+  
+ td {
+  
+    padding: 0.5em;
+    text-align: left;
+  }
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    max-width: 500px;
+    width: 80%;
+    padding: 20px;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .modal-header h2 {
+    margin: 0;
+  }
+  
+  #close-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.5em;
+  }
+  
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .modal-body label {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .modal-body input[type="text"],
+  .modal-body select ,option{
+    padding: 10px;
+  
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 253, 253);
+    margin-bottom: 20px;
+  }
+  
+  .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .modal-footer button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  button {
+    margin: 10px;
+    background-color: #5ca0d3;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+   
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 150px;
+    margin: 0 auto; /* Added */
+    display: block; /* Added */
+  }
+  
+  button:hover {
+    background-color: #3f6e91;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    margin-right: 10px;
+  }
+  
+  input[type=text]{
+    padding: 5px;
+    margin-right: 10px;
+    width: 300px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #8ac1ee;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #machineInfo {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 50%;
+    text-align: center;
+  }
+ nav {
+  position: fixed; /* set the position to fixed */
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 140px;
+  background-color: #d7f1fd;
+  color: white;
+  padding: 20px;
+}
+
+main {
+  margin-left: 200px; /* set the margin-left to the width of the sidebar */
+}
+
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  nav a:hover {
+    background-color: #ffffff;
+  }
+
+
+  

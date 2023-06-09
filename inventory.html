@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> Inventory Management</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script  lang="javascript" src="inv.js"></script>
+  </head>
+  <body>
+   
+    <header>
+      <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+          <li><a href="assets.html">Assets</a></li>
+          <li><a href="machine.html">machineInfo</a></li>
+          <li><a href="maintenance.html">maintenance</a></li>
+        </ul>
+      </nav>
+      
+    </header>
+    
+  
+      
+    <main>
+      <div>
+      <form id="searchForm" >
+        <input type="text" id="searchInput">
+        <button type="submit">Search</button>
+      </form></div>
+      <h1 style="color: aliceblue;">Welcome to My Maximo Site</h1>
+<section id="inventory1">
+    <h2>Inventory</h2>
+    <form action="add_inv.php" method="post"></form>
+    <table class="inventory">
+      <thead>
+       
+          <th>Product ID</th>
+          <th>Product Name</th>
+          <th>Stock Level</th>
+          <th>Reorder Level</th>
+        
+      </thead>
+      <tbody id="tinventory">
+        <tr>
+          <td>P001</td>
+          <td>Paper</td>
+          <td>100</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>P002</td>
+          <td>Ink Cartridge</td>
+          <td>20</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>P003</td>
+          <td>Toner</td>
+          <td>30</td>
+          <td>15</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <button id="addinvButton" onclick=" handleAddinvButtonClick()">Add Inventory</button>
+        <button id="removeButton" onclick="handleRemoveinvButtonClick()">Remove Inventory</button>
+  </section>
+</main>
+<script>
+  const searchForm = document.getElementById("searchForm");
+  const searchInput = document.getElementById("searchInput");
+  const inventory = document.getElementById("tinventory");
+  
+  searchForm.addEventListener("submit", event => {
+    event.preventDefault();
+    const searchQuery = searchInput.value.toLowerCase();
+    const rows = inventory.getElementsByTagName("tr");
+  
+    for (let i = 0; i < rows.length; i++) {
+      const cells = rows[i].getElementsByTagName("td");
+      let shouldShow = false;
+  
+      for (let j = 0; j < cells.length; j++) {
+        if (cells[j].textContent.toLowerCase().includes(searchQuery)) {
+          shouldShow = true;
+          break;
+       
+        } 
+      }
+  
+      if (shouldShow) {
+        rows[i].style.display = "table-row";
+      } else {
+        rows[i].style.display = "none";
+        alert("not found");
+      }
+    }
+  });
+  </script>
+  
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="img1.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img2.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSl
+ides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+}
+
+
+
+
+
+
+
+
+
+     
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

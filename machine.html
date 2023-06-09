@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Machine Information</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="color: aliceblue;">
+    <header>
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+              <li><a href="assets.html">Assets</a></li>
+              <li><a href="inventory.html">Inventory</a></li>
+              <li><a href="maintenance.html">maintenance</a></li>
+              <li class="dropdown">
+                <a href="#">More</a>
+                <ul class="dropdown-content">
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  
+                </ul>
+              </li>
+            </ul>
+          </nav>
+    </header>
+	<h1>Machine Information</h1>
+	<form>
+		<label for="machineName">Machine Name:</label>
+		<input type="text" id="machineName" name="machineName">
+		<button type="button" onclick="getMachineInfo()">Get Info</button>
+    
+
+
+    
+	</form>
+
+	<div id="machineInfo" style="color: rgb(235, 235, 235);"></div>
+
+	<script src="machine.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+  </head>
+  <body>
+    <style>
+      .logo {
+     
+  position: fixed;
+  top: 30%;
+  left:15%;
+  z-index: -1;
+}
+h4{
+  color: black; width: 200px; margin-left: -20px;
+}
+.logo img {
+  background: none;
+
+  width: 150px; /* Adjust the width as needed */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+    </style> <div class="logo">
+        <img src="logo.png" alt="Logo">
+   <h2  style="color: black; width: 150px; margin-left: 20px;"> MY GMER</h2></c<br>
+    <center><h4>Gestion de Mintenance des
+    Equipement de Radiologie</h4></center>
+      </div>
+    <div class="login-box">
+      <h1>Login ici</h1>
+     
+      <form method="post" action="login.php">
+
+  <label for="username">Nom:</label>
+  <input type="text" name="username" placeholder="Enter Username" required>
+  <label for="password">Mot de passe:</label>
+  <input type="password" name="password" placeholder="Enter Password" required>
+  <div style="margin-bottom: 10px;">
+  <input type="submit" name="login" value="Login">
+  <a href="register.html" >Vous n'avez pas un compte? Registrer ici.</a></div>
+</form>
+
+    </div>
+  </body>
+</html>

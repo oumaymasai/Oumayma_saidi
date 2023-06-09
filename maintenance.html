@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title >Machine Maintenance Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+		  <ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="machine.html">machineInfo</a></li>
+			<li><a href="assets.html">Assets</a></li>
+			<li><a href="inventory.html">Inventory</a></li>
+		  </ul>
+		</nav>
+	  </header> <br>
+	<h1 style="color:yellow;">Machine Maintenance Form</h1>
+	<form action="submit_maintenance.php" method="post" >
+		<table ><tr>
+			<td>
+		<label for="equipment" style="color: white;">equipment:</label></td>
+	<td><input type="text" id="equipment" name="equipment"><br></td>
+     </tr>
+	 <tr>
+	<td><label for="type" style="color: white;">Machine Type:</label></td>
+<td><select id="type" name="type">
+			<option value="X-ray">X-ray</option>
+			<option value="MRI">MRI</option>
+			<option value="CT">CT</option>
+			<option value="Ultrasound">Ultrasound</option>
+			<option value="Endoscopy">Endoscopy</option>
+		</select></td></tr><br>
+
+	<tr><td><label for="mark" style="color: white;">mark:</label></td>
+<td><input type="text" id="mark" name="mark"><br></tr></td>
+
+<tr><td><label for="model" style="color: white;">Type of Maintenance:</label></td>
+<td><input type="text" name="model" id="model"></td></td></tr><br>
+<tr>
+	<td><label for="serial_number" style="color: white;">serial number</label></td>
+	<td><input type="text" name="serial_number" id="serial_number"></td>
+</tr>
+<tr>
+	<td><label for="last_maintenance_date" style="color: white;">last maintenance date</label></td>
+	<td><input type="date" name="last_maintenance_date" id="last_maintenance_date"></td>
+</tr>
+<tr>
+	<td><label for="next_maintenance_date" style="color: white;">next_maintenance_date</label></td>
+	<td><input type="date" name="next_maintenance_date" id="next_maintenance_date"></td>
+</tr>
+
+	<tr><td colspan="2"><input type="submit" value="Submit" style="  margin: 10px;
+		background-color: #5ca0d3;
+		color: white;
+		border-radius: 5px;
+		border: none;
+		padding: 10px ;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+	   
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		width: 150px;
+		margin: 0 auto; /* Added */
+		display: block;"></td></tr>
+		</table>
+	</form>
+
+</body>
+
+</html>

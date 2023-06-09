@@ -1,0 +1,151 @@
+
+body {
+font-family: Arial, sans-serif;
+background-image: url('Background.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-color: #ffffff;
+}
+
+/* Center the h1 heading */
+h1 {
+text-align: center;
+}
+
+/* Style the table /
+table {
+margin: 0 auto; / Center the table /
+border-collapse: collapse;
+border: 1px solid #ccc;
+font-size: 16px;
+width: 70%; / Set the width of the table /
+background-color: white; / Set the background color of the table */
+
+
+/* Style the table header cells /
+th {
+padding: 8px;
+border: 1px solid #ccc;
+text-align: center; / Center the text in the cells /
+font-weight: bold; / Make the text bold */
+
+
+/* Style the table cells /
+td {
+padding: 8px;
+border: 1px solid #ccc;
+text-align: left; / Align the text to the left */
+
+
+/* Style the input fields */
+input[type="text"],
+textarea {
+width: 100%;
+padding: 8px;
+box-sizing: border-box;
+border: 1px solid #ccc;
+border-radius: 4px;
+resize: vertical;
+background-color: #ffffff;
+}
+
+/* Style the date and time input fields */
+input[type="date"],
+input[type="time"] {
+width: 100%;
+padding: 8px;
+box-sizing: border-box;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #2600ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #2600ff;
+  cursor: pointer;
+}
+
+label {
+margin-right: 20px;
+font-size: medium;
+}
+
+#fo table {
+margin: 0 auto; /* Center the table /
+border-collapse: collapse;
+width: 70%; / Set the width of the table /
+background-color: white; / Set the background color of the table */
+}
+
+#fo td {
+padding: 5px;
+border: 1px solid black;
+text-align: left; /* Align the text to the left */
+}
+
+
+header nav ul li a:hover {
+  color: #0512c2;
+  background-color: white;
+
+  transform: scale(1.1);
+  transition: ease-out;
+}
+nav {
+  position: fixed; /* set the position to fixed */
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 140px;
+  background-color: #d7f1fd;
+  color: white;
+  padding: 20px;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav a:hover {
+  background-color: #ffffff;
+}
+
+
+
+
+
+.complaint-box {
+  width: 50%;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  margin-right: 200px;
+}
